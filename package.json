@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "env-cmd -f ./environments/staging.env nodemon ./src/index.js",
-    "dev": "env-cmd -f ./environments/dev.env nodemon ./src/index.js",
-    "test": "env-cmd -f ./environments/test.env jest --watchAll --detectOpenHandles"
+    "start": "env-cmd -f ./config/staging.env nodemon ./src/index.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon ./src/index.js",
+    "test": "env-cmd -f ./config/test.env jest --watchAll --detectOpenHandles"
   },
   "jest": {
     "testEnvironment": "node"
